@@ -1,0 +1,29 @@
+{
+  "name": "chappo",
+  "version": "1.0.0",
+  "description": "AWS API project built with SST",
+  "type": "module",
+  "scripts": {
+    "dev": "sst dev",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.670.0",
+    "@aws-sdk/lib-dynamodb": "^3.670.0",
+    "@aws-sdk/client-s3": "^3.670.0",
+    "@aws-sdk/client-sqs": "^3.670.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/node": "^22.9.0",
+    "aws-sdk-client-mock": "^4.1.0",
+    "sst": "^3.3.22",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  }
+}
